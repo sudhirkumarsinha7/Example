@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "137915290035",
+    "firebase_url": "https://foodhaveli-fb57b.firebaseio.com",
+    "project_id": "foodhaveli-fb57b",
+    "storage_bucket": "foodhaveli-fb57b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137915290035:android:23e276a0997add5e",
+        "android_client_info": {
+          "package_name": "com.abc.foodHaveli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137915290035-oieqhna3iboff0mgdmfov0k1d8g8fua5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdwu1_jCU5wpLL0xmbXW8DnsmSBU1lO-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137915290035-oieqhna3iboff0mgdmfov0k1d8g8fua5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

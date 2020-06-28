@@ -52,7 +52,7 @@ function MyStack() {
       />
       <Stack.Screen
         name="Map"
-        component={List}
+        component={Map}
         options={{title: 'Map',headerStyle: {
             backgroundColor: '#f4511e',
           },
