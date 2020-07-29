@@ -15,6 +15,7 @@ MERGED from [:react-native-maps] /Users/ib_mac1/Desktop/React Native/Training/Ex
 MERGED from [:react-native-reanimated] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-webview] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ib_mac1/.gradle/caches/transforms-2/files-2.1/7f2c0278c13c1ca970ddc28dbca1ccd1/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ib_mac1/.gradle/caches/transforms-2/files-2.1/055a171d10c43231a2795117ecd4c3fd/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -237,6 +238,8 @@ MERGED from [:react-native-safe-area-context] /Users/ib_mac1/Desktop/React Nativ
 MERGED from [:react-native-safe-area-context] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] /Users/ib_mac1/Desktop/React Native/Training/Example/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ib_mac1/.gradle/caches/transforms-2/files-2.1/7f2c0278c13c1ca970ddc28dbca1ccd1/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41

@@ -15,8 +15,10 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import Main from './src/component/HomeScreen/HomeScreen.js'
+
 // import Main from './src/component/screens/Main.js'
-import Main from './src/component/screens/Main/Main.js'
+// import Main from './src/component/screens/Main/Main.js'
 
 
 export class App extends Component{
