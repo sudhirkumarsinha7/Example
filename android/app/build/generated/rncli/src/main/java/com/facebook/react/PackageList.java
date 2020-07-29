@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// react-native-build-config
+import com.ismaeld.RNBuildConfig.RNBuildConfigPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-maps
@@ -71,6 +73,7 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new RNCMaskedViewPackage(),
+      new RNBuildConfigPackage(com.demo.BuildConfig.class),
       new RNGestureHandlerPackage(),
       new MapsPackage(),
       new ReanimatedPackage(),
