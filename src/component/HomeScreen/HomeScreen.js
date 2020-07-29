@@ -35,16 +35,16 @@ function MyTabs() {
             }else if (route.name === 'Setting') {
               iconName = focused ? 'settings' : 'settings';
             }
-            // alert(iconName + size +color )
-
             // You can return any component that you like here!
             return <VectorIcon name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
-          activeTintColor: '#547DD3',
-          inactiveTintColor: 'white',
-          inactiveBackgroundColor : 'blue'
+          activeTintColor: 'white',
+          inactiveTintColor: 'gray',
+          inactiveBackgroundColor : '#FF8C00',
+          activeBackgroundColor : '#FF8C00'
+
         }}
         >
       <Tab.Screen name="Home" component={Dashboard} />
