@@ -15,18 +15,38 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import {store,persistor} from './src/config/reduxConfig'
+import _ from 'lodash'
 import Main from './src/component/HomeScreen/HomeScreen.js'
+import { PersistGate } from 'redux-persist/es/integration/react'
+import { Provider, connect } from 'react-redux'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 // import Main from './src/component/screens/Main.js'
 // import Main from './src/component/screens/Main/Main.js'
 
 
-export class App extends Component{
+// export class App extends Component{
  
-  render(){
-    return(<Main/>)
+//   render(){
+//     return(<Main/>)
+//   }
+// }
+
+class App extends Component<{}> {
+  render () {
+    return (
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <SafeAreaProvider>
+            <Main />
+          </SafeAreaProvider>
+        </PersistGate>
+      </Provider>
+    )
   }
 }
+
 
 
 export default App;

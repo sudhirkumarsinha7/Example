@@ -13,16 +13,17 @@ import React,{Component} from 'react'
 // export default Dashboard
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Test from './Test';
-import Test1 from './Test1';
+import Register from './register';
+import login from './login';
+
 
 const Drawer = createDrawerNavigator();
 
 export default function MyDrawer() {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="Test" component={Test} />
-      <Drawer.Screen name="Test1" component={Test1} />
+      <Drawer.Screen name = 'Login' component = {login}/>
+      <Drawer.Screen name="Register" component={Register} />
     </Drawer.Navigator>
   );
 }
