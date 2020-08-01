@@ -131,5 +131,23 @@ export default StyleSheet.create({
         zIndex:1, 
         position: 'absolute', 
         margin:Platform.OS === 'ios' ? 15 : 10
-    }
+    },
+    formLabel: {
+    color: '#2196F3',
+    fontSize: 16,
+    includeFontPadding: false,
+    marginTop: 10,
+    marginBottom: 0,
+    marginLeft: 10
+  },
+  input: {
+    borderColor: '#2196F3',
+    borderBottomWidth: 1.5,
+    marginTop: 0,
+    marginBottom: 0,
+    marginLeft: 10
+  },
+  flex1: {
+    flex: 1,
+  },
 });

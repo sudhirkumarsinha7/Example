@@ -8,12 +8,14 @@ import { bindActionCreators } from 'redux'
 import {
   loginRequest,
 } from '../../actions/Authenticate'
-import {user} from '../../common/defaultData'
-import {InputElement} from'../common/userHelper'
+import {user,userRole,displayNames} from '../../common/defaultData'
+import {InputElement,InputDropDownElement,CustomButton} from'../common/userHelper'
 export class Register extends Component{
       constructor (props) {
     super(props)
     this.updateState = this.updateState.bind(this)
+    this.onCancel=this.onCancel.bind(this)
+    this.onClick = this.onClick.bind(this)
     this.state = {
       email: '',
       password: ''
@@ -31,6 +33,32 @@ export class Register extends Component{
    updateState (updateElements) {
     this.setState(updateElements)
   }
+  onClick(){
+    var isNotValid = false
+    var invalidKey = ''
+    var fetchBody = {
+    }
+    user.userFormValidation.requiredFields.map((key) => {
+      if (this.state[key] || this.state[key] === 0) {
+         if (isNaN(Number(this.state[key]))) {
+          fetchBody[key] = this.state[key]
+        } else {
+          fetchBody[key] = Number(this.state[key])
+        }
+      } else {
+        isNotValid = true
+        invalidKey = key
+      }
+    })
+    if (isNotValid) {
+      alert('Please enter valid ' + displayNames[invalidKey])
+    } else {
+     alert(JSON.stringify(fetchBody))
+    }
+  }
+  onCancel(){
+    alert('cancel')
+  }
     render(){
       var data = user.registerationForm
         return (
@@ -42,40 +70,28 @@ export class Register extends Component{
           switch (eachRow.type) {
             case 'String' :
               return <View >
-                <View><InputElement
+                <InputElement
                   eachRow={eachRow}
                   state={this.state}
                   updateState={this.updateState}
                 />
-                </View>
               </View>
-          //   case 'dropdown' :
-          //     var dataList = ['No data available']
-          //     if (eachRow.stateName === 'model') {
-          //       if (this.state.isTruck) {
-          //         dataList = defaultStateValues.modelList1
-          //       } else {
-          //         dataList = defaultStateValues.modelList
-          //       }
-          //     } else if (eachRow.stateName === 'sensor_number') {
-          //       dataList = defaultStateValues.sensorNoList
-          //     }
-          //     return (this.state.model === 'GPSTracker' && eachRow.stateName === 'sensor_number') ? null : <View style={styles.h1}><View style={{ flex: 1, marginRight: 8, marginBottom: 8 }}><DropdownElement
-          //       eachRow={eachRow}
-          //       dataList={dataList}
-          //       state={this.state}
-          //       updateState={this.updateState}
-          //     />
-          //     </View>
-          //     </View>
-          //   case 'buttons' :
-          //     return <View style={styles.h1}><View style={{ flex: 1, marginRight: 8 }}><CustomButton
-          //       eachRow={eachRow}
-          //       onBackPress={this.onBackPress}
-          //       onCreateClicked={this.onCreateClicked}
-          //     />
-          //     </View>
-          //     </View>
+            case 'dropdown' :
+              var dataList = userRole
+              return <View ><InputDropDownElement
+                eachRow={eachRow}
+                dataList={dataList}
+                state={this.state}
+                updateState={this.updateState}
+              />
+              </View>
+            case 'buttons' :
+              return <View><CustomButton
+                eachRow={eachRow}
+                onCancel={this.onCancel}
+                onClick={this.onClick}
+              />
+              </View>
             default :
               return <View/>
           }

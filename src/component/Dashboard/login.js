@@ -24,6 +24,7 @@ export class Login extends Component{
 
        var {email,password} = this.state
         this.props.loginRequest(email,password)
+        alert(JSON.stringify(this.state))
     }
     render(){
         return (
@@ -46,7 +47,7 @@ export class Login extends Component{
                   <Text style={{ flex: 1, textAlign: 'center', }}>Submit</Text>
                 </Button>
               </View>
-        <Text>{JSON.stringify(this.props)}</Text>
+        {/* <Text>{JSON.stringify(this.props)}</Text> */}
         </Content>
       </Container>
     )

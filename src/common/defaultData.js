@@ -12,6 +12,7 @@ const user={
       stateName: 'mob',
       type: 'String',
       required: true,
+      keyboardType : 'numeric',
       maxLength: 10
     },
     role: {
@@ -44,9 +45,21 @@ const user={
         }
       }
     }
-    }
-
+    },
+  userFormValidation: {
+    requiredFields: [ 'address', 'role', 'mob', 'name'] // written in reverse order to validate from top to bottom
+  },
+    
+}
+ const userRole= [{ value: 'customer', key: 1, label: 'Customer' }, { value: 'admin', key: 2, label: 'admin' }, { value: 'vendor', key: 3, label: 'vendor' }]
+const displayNames = {
+  name: 'User name',
+  mob: 'Mobile number',
+  address: 'address',
+  role: 'Role',
 }
 export {
-    user
+    user,
+    userRole,
+    displayNames
 }
