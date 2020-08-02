@@ -15,6 +15,20 @@ const user={
       keyboardType : 'numeric',
       maxLength: 10
     },
+     email: {
+      displayName: 'Email:',
+      stateName: 'email',
+      type: 'String',
+      required: true,
+      maxLength: 15
+    },
+     password: {
+      displayName: 'Password:',
+      stateName: 'password',
+      type: 'String',
+      required: true,
+      maxLength: 15
+    },
     role: {
       displayName: 'Role',
       stateName: 'role',
@@ -47,7 +61,7 @@ const user={
     }
     },
   userFormValidation: {
-    requiredFields: [ 'address', 'role', 'mob', 'name'] // written in reverse order to validate from top to bottom
+    requiredFields: [ 'address', 'role','password','email' 'mob', 'name'] // written in reverse order to validate from top to bottom
   },
     
 }
@@ -57,6 +71,8 @@ const displayNames = {
   mob: 'Mobile number',
   address: 'address',
   role: 'Role',
+  email : 'Email',
+  password : 'Password'
 }
 export {
     user,
